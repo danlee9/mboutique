@@ -1,0 +1,385 @@
+body {
+	color: #6a6969;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 1000px;
+	margin: 20px auto;	
+}
+
+header {
+	background-color: #fffabe;
+	width: 1000px;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+li {
+	display: inline-block;
+}
+
+nav {
+	background: url(img/logo.png) no-repeat 40px 20px;
+	height: 72px;
+	text-align: right;
+	margin-right: 80px;
+}
+
+nav li {
+	font-size: 16px;
+	color: #515151;
+	padding: 27px;
+	text-transform: uppercase;
+}
+
+nav li:hover {
+	color: #d42551;
+	cursor: pointer;
+}
+
+.cover-image {
+	width: 1000px;
+	height: 400px;
+}
+
+aside, main {
+	display: inline-block;
+}
+
+aside {
+	width: 187px;
+	vertical-align: top;
+}
+
+aside img {
+	margin-top: 150px;
+}
+
+main {
+	width: 740px;
+	padding: 0 30px;
+}
+
+main h1, main h2 {
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+main h1 {
+	margin-top: 0;
+}
+
+main h2 {
+	margin-top: 40px;
+}
+
+main p {
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.day-sample {
+	width: 126px;
+	height: 140px;
+	background-color: #fffabe;
+	margin: 6px;
+}
+
+.samples ul li:nth-child(1) {
+	margin-left: 10px; /* margin left for first day-sample li to center all day samples within their ul */
+}
+
+h3 {
+	font-size: 14px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.day-sample .time {
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+.day-sample p {
+	margin: 0;
+	font-size: 12px;
+}
+
+.day-sample img {
+	height: 20px;
+	float: right;
+	position: relative;
+	right: 8px;
+	bottom: 3px;
+}
+
+.macaron {
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 116px;
+	height: 23px;
+	clear: right;
+}
+
+.coconut, .vanilla, .lemon, .almond {
+	color: white;
+}
+
+.coconut {
+	background-color: #824603;
+}
+
+.vanilla {
+	background-color: #df5277;
+}
+
+.lemon {
+	background-color: #a2304e;
+}
+
+.almond {
+	background-color: #c39005;
+}
+
+footer {
+	margin-top: 20px;
+	width: 1000px;
+	height: 80px;
+	background-color: #df5277;
+	text-align: center;
+	color: white;
+}
+
+span, small {
+	display: inline-block;
+	font-size: 12px;
+	margin-top: 14px;
+}
+
+span {
+	width: 33%;	
+}
+
+span img {
+	margin-left: 15px;
+}
+
+.mail {
+	background: url(img/mail.png) no-repeat 80px top;
+}
+
+.phone {
+	background: url(img/phone.png) no-repeat 100px top;;
+}
+
+/* our macarons styling */
+section {
+	margin: 40px 0;
+}
+
+.our-macarons-bg {
+	background: url(img/our-macarons-background.png) center -50px;
+}
+
+section h1, section h2, section p {
+	margin: 40px;
+}
+
+section h1, section h2 {
+	font-size: 20px;
+}
+
+section p {
+	font-size: 14px;
+}
+
+.macarons-list {
+	list-style-type: disc;
+	padding-left: 60px;
+	margin: 20px;
+}
+
+.macarons-list li, .gift-list li {
+	display: list-item;
+	font-size: 14px;
+}
+
+
+/* gifts and parties section styling */
+.gift-list {
+	list-style-type: disc;
+	padding-left: 60px;
+	margin: 0 10px;
+}
+
+.gifts-parties-bg {
+	background: url(img/gifts-parties-background.png) center -50px;
+	padding-bottom: 80px;
+	margin-bottom: 20px;
+}
+
+.gift-desc {
+	margin: 15px 40px;
+	width: 550px;
+}
+
+a {
+	color: #df5277;
+}
+
+/* contact page */
+.macarons-bg {
+	background: url(img/macarons-image.png) no-repeat 760px 90px;
+}
+
+.contact {
+	display: inline-block;
+	width: 330px;
+	margin-left: 40px;
+}
+
+.contact h2 {
+	margin-left: 0;
+}
+
+.info li {
+	display: list-item;
+	line-height: 1.4em;
+	font-size: 14px;
+}
+
+.info p {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.form {
+	vertical-align: top;
+}
+
+.form h2 {
+	margin-bottom: 10px;
+}
+
+.form input {
+	width: 290px;
+	height: 15px;
+	padding: 10px;
+	background-color: #f5f5f5;
+	border: none;
+	margin-top: 10px;
+}
+
+textarea {
+	width: 290px;
+	height: 50px;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #f5f5f5;
+	border: none;
+}
+
+button {
+	width: 155px;
+	height: 35px;
+	text-align: center;
+	background-color: #f5f5f5;
+	border: none;
+	margin-top: 5px;
+	margin-left: 154px;
+}
+
+@media screen and (max-width: 375px) {
+	.container {
+		width: 375px;
+		margin: 0 auto;	
+	}
+
+	header {
+		width: 375px;
+	}
+
+	nav {
+		background: url(img/logo.png) no-repeat 110px 15px;
+		height: 90px;
+		text-align: center;
+		margin-right: 10px;
+		overflow: auto;
+	}
+
+	nav ul {
+		margin-left: 0;
+		margin-top: 55px;
+	}
+
+	nav li {
+		font-size: 11px;
+		color: #515151;
+		padding: 3px;
+		text-transform: uppercase;
+	}
+
+	nav li:hover {
+		color: #d42551;
+		cursor: pointer;
+	}
+
+	.cover-image {
+		width: 375px;
+		height: 150px;
+	}
+
+	.contact {
+		margin-left: 30px;
+		width: 300px;
+	}
+
+	section {
+		margin-top: 0;
+	}
+
+	.border-bottom {
+		border-bottom: 3px solid #f5f5f5;
+	}
+
+	footer {
+		margin-top: 0px;
+		width: 375px;
+	}
+
+	span, small {
+		display: inline-block;
+		font-size: 10px;
+		margin-top: 10px;
+	}
+
+	span {
+		width: 40%;
+	}
+
+	span img {
+		margin-left: 10px;
+	}
+
+	.mail {
+		background: url(img/mail.png) no-repeat 0 top;
+	}
+
+	.phone {
+		background: url(img/phone.png) no-repeat 10px top;;
+	}
+
+	.margin-left {
+		margin-left: 15px;
+	}
+
+	.margin-right {
+		margin-right: 15px;
+	}
+
+}
