@@ -13,6 +13,14 @@ header {
 	width: 1000px;
 }
 
+.dropdown {
+	display: none;
+}
+
+.responsive-menu {
+	display: none;
+}
+
 ul {
 	padding: 0;
 	list-style-type: none;
@@ -39,6 +47,10 @@ nav li {
 nav li:hover {
 	color: #d42551;
 	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
 }
 
 .cover-image {
@@ -303,17 +315,52 @@ button {
 		width: 100%;
 	}
 
+	.dropdown {
+		display: inline-block;
+		position: relative;
+		top: 13px;
+		cursor: pointer;
+		margin-right: 25px;
+	}
+
+	nav {
+		background: url(img/logo.png) no-repeat 25px 14px;
+		height: 60px;
+		text-align: right;
+		margin-right: 0;
+		position: relative;
+	}
+
+	nav ul {
+		display: none;
+	}
+
 	nav li {
+		background: rgba(255,250,190,0.7);
+		display: block;
 		font-size: 12px;
 		color: #515151;
-		padding-right: 12px;
-		padding-left: 12px;
-		text-transform: uppercase;
+		padding: 10px;
+		text-align: center;
+		border-top: 1px solid black;
 	}
 
 	.cover-image {
 		width: 100%;
 		height: auto;
+	}
+
+	.our-macarons-bg {
+		background: url(img/our-macarons-background.png) no-repeat -40px -50px;
+	}
+
+	.gift-desc {
+		margin: 15px 40px;
+		width: auto;
+	}
+
+	.gifts-parties-bg {
+		background: url(img/gifts-parties-background.png) no-repeat center -140px;
 	}
 
 	aside {
@@ -328,11 +375,23 @@ button {
 	footer {
 		width: 100%;
 		height: auto;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 	footer span {
 		display: block;
-		margin: 8px auto;
+		margin: 3px auto;
+		width: auto;
+	}
+
+	span img {
+		margin-left: 5px;
+	}
+
+	small {
+		margin-top: 5px;
+		margin-bottom: 5px;
 	}
 
 	.mail, .phone {
@@ -340,92 +399,27 @@ button {
 	}
 }
 
-@media screen and (max-width: 375px) {
-	.container {
-		width: 375px;
-		margin: 0 auto;	
+@media screen and (max-width: 775px) {
+	.gifts-parties-bg {
+		background: none;
 	}
+}
 
-	header {
-		width: 375px;
-	}
-
-	nav {
-		background: url(img/logo.png) no-repeat 110px 15px;
-		height: 90px;
-		text-align: center;
-		margin-right: 10px;
-		overflow: auto;
-	}
-
-	nav ul {
-		margin-left: 0;
-		margin-top: 55px;
-	}
-
-	nav li {
-		font-size: 11px;
-		color: #515151;
-		padding: 3px;
-		text-transform: uppercase;
-	}
-
-	nav li:hover {
-		color: #d42551;
-		cursor: pointer;
-	}
-
-	.cover-image {
-		width: 375px;
-		height: 150px;
-	}
-
+@media screen and (max-width: 520px) {
 	.contact {
-		margin-left: 30px;
-		width: 300px;
+		width: auto;
+		margin-left: 0
 	}
 
-	section {
-		margin-top: 0;
+	.form input {
+		width: 250px;
 	}
 
-	.border-bottom {
-		border-bottom: 3px solid #f5f5f5;
+	textarea {
+		width: 250px;
 	}
 
-	footer {
-		margin-top: 0px;
-		width: 375px;
+	button {
+		margin-left: 115px;
 	}
-
-	span, small {
-		display: inline-block;
-		font-size: 10px;
-		margin-top: 10px;
-	}
-
-	span {
-		width: 40%;
-	}
-
-	span img {
-		margin-left: 10px;
-	}
-
-	.mail {
-		background: url(img/mail.png) no-repeat 0 top;
-	}
-
-	.phone {
-		background: url(img/phone.png) no-repeat 10px top;
-	}
-
-	.margin-left {
-		margin-left: 15px;
-	}
-
-	.margin-right {
-		margin-right: 15px;
-	}
-
 }

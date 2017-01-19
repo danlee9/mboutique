@@ -16,6 +16,13 @@
 					<li><a href="gifts.html">Gifts & Parties</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
+				<img src="img/dropdown.png" alt="" class="dropdown">
+				<ul class="responsive-menu" style="display: none;">
+					<a href="index.html"><li>Welcome</li></a>
+					<a href="macarons.html"><li>Our Macaroons</li></a>
+					<a href="gifts.html"><li>Gifts & Parties</li></a>
+					<a href="contact.html"><li>Contact</li></a>
+				</ul>
 			</nav>
 			<img src="img/contact-image.png" alt="" class="cover-image">
 		</header>
@@ -54,5 +61,12 @@
 			<span class="margin-right">Follow us <img src="img/facebook.png" alt=""> <img src="img/twitter.png" alt=""></span>
 			<small>Copyright &copy;2016 MBoutique. All rights reserved.</small>
 		</footer>
+		<script>
+			var dropdown = document.querySelector('.dropdown');
+			var menu = document.querySelector('.responsive-menu')
+			dropdown.addEventListener("click", function(){
+		    menu.style.display === 'none' ? menu.style.display = 'block' : menu.style.display = 'none';
+			});
+		</script>
 </body>
 </html>
