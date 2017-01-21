@@ -53,6 +53,11 @@ a {
 	text-decoration: none;
 }
 
+/* this applies only to non dropdown links */
+li a:hover {
+	color: red;
+}
+
 .cover-image {
 	width: 1000px;
 	height: 400px;
