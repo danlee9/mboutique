@@ -1,31 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MBoutique</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div class="container">
-		<header>
-			<nav>
-				<ul>
-					<li><a href="index.html">Welcome</a></li>
-					<li><a href="macarons.html">Our Macarons</a></li>
-					<li><a href="gifts.html">Gifts & Parties</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-				<img src="img/dropdown.png" alt="" class="dropdown">
-				<ul class="responsive-menu" style="display: none;">
-					<a href="index.html"><li>Welcome</li></a>
-					<a href="macarons.html"><li>Our Macaroons</li></a>
-					<a href="gifts.html"><li>Gifts & Parties</li></a>
-					<a href="contact.html"><li>Contact</li></a>
-				</ul>
-			</nav>
-			<img src="img/welcome-image.png" alt="" class="cover-image">
-		</header>
+<?php
+$alt = 'welcome-image';
+include('includes/header.php');
+ ?>
 		<section>
 			<aside>
 				<img src="img/macarons-image.png" alt="macarons">
@@ -85,19 +61,4 @@
 				</li>
 			</ul>
 		</section>
-		<footer>
-			<span class="mail">order@mboutique.com</span>
-			<span class="phone">949.800-3111</span>
-			<span>Follow us <img src="img/facebook.png" alt=""> <img src="img/twitter.png" alt=""></span>
-			<small>Copyright &copy;2016 MBoutique. All rights reserved.</small>
-		</footer>
-	</div>
-	<script>
-		var dropdown = document.querySelector('.dropdown');
-		var menu = document.querySelector('.responsive-menu')
-		dropdown.addEventListener("click", function(){
-	    menu.style.display === 'none' ? menu.style.display = 'block' : menu.style.display = 'none';
-		});
-	</script>
-</body>
-</html>
+<?php include('includes/footer.php'); ?>
