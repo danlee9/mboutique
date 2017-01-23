@@ -1,6 +1,6 @@
 # MBoutique
 
-Live: https://danlee9.github.io/mboutique/
+Live: http://danlee.site/mboutique
 
 - Re-creation of a website for a baking goods store 
 	- Basic skeleton created with HTML5 and pixel perfect placement of images and styling made with CSS3
